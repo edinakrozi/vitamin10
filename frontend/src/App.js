@@ -4,7 +4,7 @@ function App() {
   const [quote, setQuote] = useState("");
 
   const getQuote = async () => {
-    const response = await fetch("https://vitamin10-znr0.onrender.com");
+    const response = await fetch("https://vitamin10-znr0.onrender.com/quote");
     const data = await response.json();
     setQuote(data.quote);
   };
